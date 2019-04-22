@@ -1,0 +1,64 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.lista > li{
+	position: relative;
+	display: inline-block;
+}
+
+.lista > li > a{
+	display: block;
+	text-decoration: none;
+}
+
+.lista li a:hover{
+	color: #3580CE;
+	transition: all .3s;
+}
+
+/* Sublista*/
+
+.sublista{
+	position: absolute;
+	background: #333333;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.sublista li a{
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+
+.lista li:hover .sublista{
+	visibility: visible;
+	opacity: 1;
+}
+
+.sublista2{
+	position: absolute;
+	background: #333333;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.sublista2 li a{
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+
+.lista li:hover .sublista2{
+	visibility: visible;
+	opacity: 1;
+}
